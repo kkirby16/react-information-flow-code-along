@@ -13,7 +13,7 @@ class Parent extends Component {
 
   changeColor = (newChildColor) => {
     this.setState({
-      color: getRandomColor(),
+      color: getRandomColor(), //component is rerendered when own state or props change. does whole component component get recalled or just the render part of the component get rerendered?
       childrenColor: newChildColor,
     });
   };
